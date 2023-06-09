@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="uk">
+    <meta charset="UTF-8">
+    <title>My Page</title>
+
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+	<div class="containers">
+
+		<div class="container-left">
+			<div class="input">
+				<div class="form">
+				  <input placeholder="Назва товару" />
+				  <button class="add_product" data-tooltip="Додати">Додати</button>
+				</div>
+			 </div>
+			 <div class="product">
+				<div class="text-product"><s>Помідор</s></div>
+				<div class="controls">
+				  <button class="button delete" hidden>-</button>
+				  <span class="counts hidden">2</span>
+				  <button class="button add" hidden>+</button>
+				</div>
+				<div class="state">
+				  <div class="controls-state">
+					 <button class="not-bought" data-tooltip="Не куплено">Не куплено</button>
+				  </div>
+				</div>
+			 </div>
+			 <div class="product">
+				<span class="text-product">Печиво</span>
+				  <div class="controls">
+						<button class="button delete" data-tooltip="Зменшити">-</button>
+						<span class="counts">2</span>
+						<button class="button add" data-tooltip="Додати">+</button>
+				  </div>
+				  <div class="state">
+						<div class="controls-state">
+							 <div class="controls-state">
+								  <button class="bought" data-tooltip="Куплено">Куплено</button>
+								  <button class="remove" data-tooltip="Видалити">X</button>
+							 </div>
+						</div>
+				  </div>
+			 </div>
+			 <div class="product">
+				  <span class="text-product">Сир</span>
+				  <div class="controls">
+					<button class="button delete" data-tooltip="Зменшити">-</button>
+					<span class="counts">2</span>
+					<button class="button add" data-tooltip="Додати">+</button>
+				  </div>
+				  <div class="state">
+						<div class="controls-state">
+							<button class="bought" data-tooltip="Куплено">Куплено</button>
+							<button class="remove" data-tooltip="Видалити">X</button>
+						</div>
+				  </div>
+			 </div>
+		</div>
+
+		<div class="container-right">
+			 <div class="border_btm">
+				  <h3>Залишилося</h3>
+			 </div>
+			 <div class="section-rest border_btm">
+				  <section class="section-row">
+							 <div class="buy-product">Печиво<span class="counts-bought">2</span></div>
+							 <div class="buy-product">Сир<span class="counts-bought">1</span></div>
+				  </section>
+			 </div>
+			 <div class="border_btm">
+				  <h3>Куплено</h3>
+			 </div>
+			 <div class="basket">
+				  <section class="section-row">
+							<div class="buy-product"><s>Помідор</s><span class="counts-bought"><s>2</s></span></div>
+				  </section>
+			 </div>
+
+		</div>
+  </div>
+
+  <div class="badge">
+		<div class="title-badge">BuyList</div>
+		<div class="author-badge">Created by: Tron Anna</div>
+  </div>
+	  
+</body>
+</html>

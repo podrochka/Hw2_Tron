@@ -1,0 +1,315 @@
+.badge {
+    position: fixed;
+    left: 20px;
+    bottom: 0px;
+
+    width: 120px;
+    height: 130px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    padding: 5px;
+    margin-bottom: -80px;
+
+    transition: all 2s ease;
+}
+
+.badge:hover {
+    transform: translateY(-80px);
+    background-color: rgba(10, 1, 64, 0.9);
+    /* border-radius: 20px 20px 0 0; */
+}
+
+.title-badge {
+    font-size: 30px;
+    text-align: center;
+}
+
+.author-badge {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media print {
+    .title-badge {
+        display: none;
+    }
+
+    .badge {
+        border: 3px solid rgba(10, 1, 64, 0.9);
+        background-color: white;
+        border-radius: 20px 20px 0 0;
+        color: black;
+        height: 100px;
+        margin-bottom: 0px;
+    }
+}
+/* */
+
+body {
+background-color: #dadada;
+height: 100%;
+}
+.containers {
+min-width: 600px;
+width: auto;
+margin: 7% 10%;
+
+}
+.container-right {
+min-width: 300px;
+display: inline-block;
+border-radius: 5px;
+background-color: #fff;
+}
+.section-row{
+display: flex;
+}
+.container-left {
+width: 60%;
+display: inline-block;
+border-radius: 5px;
+background-color: #fff;
+}
+
+@media screen and (min-width: 500px) {
+.container-right{
+     position: absolute;
+     margin-left: 3%;
+}
+}
+
+.input {
+padding: 15px;
+}
+
+input {
+border-radius: 5px;
+border: 1px solid #e2e2e2;
+padding: 10px;
+width: 84%;
+}
+
+.add_product {
+cursor: pointer;
+margin-left: -1%;
+width: 17%;
+background-color: #2285d0;;
+color: #fff;
+border: 0px;
+border-radius: 0px 5px 5px 0px;
+transition-duration: 300ms;
+}
+
+.form {
+width: 100%;
+display: flex;
+}
+
+.add_product:hover {
+background-color: #3f6dff;
+}
+
+.add_product:active {
+background-color: #1b2288;
+}
+
+.product {
+display: flex;
+padding: 10px;
+border-top: 1px #aaa solid;
+}
+
+.text-product {
+padding: 5px 0 0 15px;
+text-align: left;
+width: 30%;
+font-family: Arial;
+font-size: 14px;
+}
+
+.button {
+transition-duration: 300ms;
+cursor: pointer;
+width: 30px;
+height: 30px;
+text-align: center;
+color: #fff;
+font-size: 1.2em;
+font-style: oblique;
+border-radius: 20px;
+border: 0px;
+}
+
+.controls {
+width: 30%;
+margin-left: 25px;
+margin-right: 25px;
+}
+
+.add {
+border-bottom: 2px #3a9434 solid;
+cursor: pointer;
+background-color: #52ce48;
+}
+
+.add:hover {
+background-color: #46b03e;
+}
+
+.delete {
+border-bottom: 2px #db2828 solid;
+cursor: pointer;
+background-color: #db2828;
+}
+.deletelow{
+border-bottom: 2px rgba(203, 12, 30, 0.37) solid;
+cursor: pointer;
+background-color: rgba(249, 15, 37, 0.37);
+}
+.delete:hover {
+background-color: rgba(198, 12, 29, 0.37);
+}
+
+.counts {
+width: 40px; 
+padding: 5px 0;
+border-radius: 5px;
+background-color: #ededed;
+text-align: center; 
+margin: 0 auto; 
+}
+
+
+.remove {
+transition-duration: 300ms;
+cursor: pointer;
+border: 0px;
+border-radius: 5px;
+width: 30px;
+height: 30px;
+background-color: #d8172f;
+color: #fff;
+border-bottom: 3px #9c2c1d solid;
+}
+
+.remove:hover {
+background-color: #b11c28;
+}
+
+.bought {
+transition-duration: 300ms;
+cursor: pointer;
+background: linear-gradient(transparent, rgba(0, 0, 0, .05)) #F8F8F8;
+border: 0px;
+border-radius: 5px;
+padding: 5px 25px 5px 25px;
+border-bottom: #9b9c99 3px solid;
+}
+.not-bought{
+transition-duration: 300ms;
+cursor: pointer;
+background: linear-gradient(transparent, rgba(0, 0, 0, .05)) #F8F8F8;
+border: 0px;
+border-radius: 5px;
+padding: 5px 25px 5px 25px;
+border-bottom: #9b9c99 3px solid;
+}
+.not-bought:hover{
+background: linear-gradient(transparent, rgba(0, 0, 0, .05)) #acacac;
+}
+
+.bought:hover {
+background: linear-gradient(transparent, rgba(0, 0, 0, .05)) #acacac;
+}
+
+
+
+.buy-product {
+padding: 5px;
+margin: 5px;
+background-color: #dadada;
+border: 0px;
+border-radius: 5px;
+}
+
+.counts-bought {
+background-color: #ffaa52;
+margin: 2px;
+padding: 2px 6px 2px 6px;
+color: #fff;
+border-radius: 100%;
+}
+
+
+.rest-text {
+padding: 0 0 15px 15px;
+}
+
+.bought-text {
+padding: 0 0 15px 15px;
+}
+
+.border_btm {
+border-bottom: 1px #999 solid;
+}
+
+.state {
+width: 40%;
+}
+
+.controls-state {
+float: right;
+}
+
+h3 {
+padding: .2% 2%;
+}
+
+
+
+[data-tooltip] {
+position: relative;
+display: inline-block;
+}
+
+[data-tooltip]::after {
+content: attr(data-tooltip);
+position: absolute;
+bottom: 100%;
+left: 50%;
+transform: translateX(-50%);
+padding: 5px 10px;
+border-radius: 5px;
+background-color: #8a2be2;
+color: #fff;
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.7s ease, visibility 0.3s ease;
+}
+
+[data-tooltip]:hover::after {
+opacity: 1;
+visibility: visible;
+}
+
+.product {
+display: flex;
+align-items: center;
+}
+
+.text-product {
+flex-grow: 1;
+}
+
+
+.counts {
+padding: 5px 10px;
+border-radius: 5px;
+background-color: #ededed;
+}
+.hidden{
+margin-left: 33px;
+}
